@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container1{
+            display: grid;
+            height: 700px;
+            width: 100%;
+            gap: 10px;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 0.8fr 1fr 1fr 1.2fr;
+        }
+        .container1 div{
+            border: 1px solid;
+        }
+        .grid-item1{
+            background-image: url(../img/mumbai.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        .grid-item2{
+            background-image: url(../img/ayodhya.jpeg);
+            background-position: center;
+            background-size: cover;
+        }
+        .grid-item3{
+            grid-column: 3 /span 4;
+            grid-row: 1 /span 3;
+            background-image: url(../img/kolkata.jpeg);
+            background-position: center;
+            background-size: cover;
+        }
+        .grid-item4{
+            grid-row: 2 /span 2;
+            grid-column: 1 /span 2;
+            background-image: url(../img/varanasi.jpeg);
+            background-position: center;
+            background-size: cover;
+        }
+        .grid-item5{
+            grid-row: 4;
+            grid-column: 1 /span 2;
+            background-image: url(../img/bglight.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        .grid-item6{
+            grid-row: 4;
+            grid-column: 3 /span 4;
+            background-image: url(../img/bg4k.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        .container2{
+            display: grid;
+            height: 700px;
+            width: 100%;
+            gap: 10px;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr ;
+        }
+        .item2{
+            grid-column: 2 /span 4;
+            grid-row: 1 /span 4;
+            background-color: bisque;
+            height: 100%;
+            width: 100%;
+            outline: none;
+            border: none;
+        }
+        .item1{
+            background-color: aqua;
+            cursor: pointer;
+        }
+        .container3{
+            display: grid;
+            height: 700px;
+            width: 700px;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+            gap: 10px;
+            /* margin: 100px; */
+            position: relative;
+            
+        }
+        .img1{
+            grid-row: 1 /span 2;
+            grid-column: 1 /span 2;
+            border-radius: 100%;
+            /* grid-area: img1; */
+            z-index: 1;
+            /* background-color: black; */
+            background-image: url(https://c4.wallpaperflare.com/wallpaper/1022/53/128/ultra-wide-car-nissan-skyline-gt-r-wallpaper-preview.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            top: 15px;
+            position: relative;
+            border: 10px solid white;
+        }
+        .img2{
+            /* grid-area: img2; */
+            /* background-color: aqua; */
+            grid-column: 2 /span 4;
+            grid-row: 1 /span 2;
+            z-index: 0;
+            margin-top: 20px;
+            background-image: url(https://c4.wallpaperflare.com/wallpaper/662/966/394/sky-tokyo-car-bicycle-wallpaper-thumb.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+
+        }
+        .img3{
+            grid-row: 1 /span 2;
+            grid-column: 5 /span 6;
+            border-radius: 100%;
+            /* grid-area: img3; */
+            /* background-color: black; */
+            z-index: 1;
+            top: 15px;
+            position: relative;
+            background-image: url(https://c4.wallpaperflare.com/wallpaper/157/340/999/car-sports-car-supercar-lamborghini-aventador-wallpaper-preview.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            border: 10px solid white;
+
+        }
+        .img4{
+            /* grid-area: img4; */
+            /* background-color: rgb(0, 255, 68); */
+            grid-column: 1 /span 2;
+            grid-row: 2 /span 3;
+            /* z-index: 1; */
+            background-image: url(https://c4.wallpaperflare.com/wallpaper/834/299/692/city-lights-girl-moon-wallpaper-thumb.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+
+        }
+        .img5{
+            grid-row: 2 /span 3;
+            grid-column: 2 /span 4;
+            border-radius: 100%;
+            /* grid-area: img5; */
+            /* background-color: black; */
+            z-index: 1;
+            margin-left:50px;
+            margin-right: 50px;
+            background-image: url(https://c4.wallpaperflare.com/wallpaper/839/17/210/nissan-skyline-gt-r-r34-nissan-gtr-r34-nissan-skyline-gt-r-r34-nismo-nissan-wallpaper-thumb.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            border: 10px solid white;
+
+
+        }
+        .img6{
+            /* grid-area: img6; */
+            grid-column: 5 /span 6;
+            grid-row: 2 /span 3;
+            /* background-color: aquamarine; */
+            background-image: url(https://c4.wallpaperflare.com/wallpaper/825/14/569/skyscrapers-tokyo-lights-railings-wallpaper-thumb.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        .img7{
+            grid-row: 5 /span 6;
+            grid-column: 1 /span 2;
+            border-radius: 100%;
+            /* grid-area: img7; */
+            position: relative;
+            bottom: 140px;
+            /* background-color: black; */
+            background-image: url(https://c4.wallpaperflare.com/wallpaper/944/585/315/dodge-challenger-srt-hellcat-widebody-dodge-challenger-2018-cars-4k-wallpaper-thumb.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            border: 10px solid white;
+            margin-right: -20px;
+            left: -15px;
+        }
+        .img8{
+            /* grid-area: img8; */
+            grid-column: 2 /span 4;
+            grid-row: 4 /span 5;
+            /* background-color: pink; */
+            margin-bottom: 120px;
+            background-image: url(https://c4.wallpaperflare.com/wallpaper/683/841/112/japan-anime-clouds-street-house-hd-wallpaper-thumb.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        .img9{
+            grid-row: 5 /span 6;
+            grid-column: 5 /span 6;
+            border-radius: 100%;
+            /* grid-area: img9; */
+            position: relative;
+            bottom: 140px;
+            /* background-color: black; */
+            background-image: url(https://c4.wallpaperflare.com/wallpaper/997/4/961/dodge-dodge-charger-srt-hellcat-widebody-blue-car-car-muscle-car-hd-wallpaper-thumb.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            border: 10px solid white;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container1">
+        <div class="grid-item1"></div>
+        <div class="grid-item2"></div>
+        <div class="grid-item3"></div>
+        <div class="grid-item4"></div>
+        <div class="grid-item5"></div>
+        <div class="grid-item6"></div>
+    </div>
+    <br><br>
+    <div class="container2">
+        <a class="item1" href="./1-assignment.html" target="webpage"></a>
+        <a class="item1" href="./2-assignment.html" target="webpage"></a>
+        <a class="item1" href="./7-assignment.html" target="webpage"></a>
+        <a class="item1" href="./4assignment.html" target="webpage"></a>
+        <a class="item1" href="./6-assignment.html" target="webpage"></a>
+        <iframe class="item2" name="webpage"></iframe>
+        <a class="item1"></a>
+        <a class="item1"></a>
+        <a class="item1"></a>
+        <a class="item1"></a>
+        <a class="item1"></a>
+        <a class="item1"></a>
+        <a class="item1"></a>
+        <a class="item1"></a>
+        <a class="item1"></a>
+
+    </div>
+    <br><br><br>
+    <hr><hr>
+    <div>
+        <!-- <div style="border-radius: 100%;height: 200px;width: 200px;border: 1px solid;z-index: 1;position: absolute;left: 20%;"></div> -->
+
+    <div class="container3">
+        <div class="img1"></div>
+        <div class="img2"></div>
+        <div class="img3"></div>
+        <div class="img4"></div>
+        <div class="img5"></div>
+        <div class="img6"></div>
+        <div class="img7"></div>
+        <div class="img8"></div>
+        <div class="img9"></div>
+    </div>
+    </div>
+</body>
+</html>
