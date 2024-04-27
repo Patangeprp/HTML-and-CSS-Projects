@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container1{
+            height: 700px;
+            width: 100%;
+            display: grid;
+            overflow: hidden;
+            grid-template-areas: 'img1 img1 img2 img2 img3'
+                                 'img1 img1 img2 img4 img3'
+                                 'img1 img5 img2 img4 img4'
+                                 'img5 img5 img5 img4 img4';
+            gap: 10px;                     
+        }
+        .img1{
+            background-image: url(https://c4.wallpaperflare.com/wallpaper/788/765/277/nature-landscape-mountains-mist-wallpaper-thumb.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            transform: translate(-980px ,-180px) rotate(-45deg);
+            height: 400px;
+            grid-area: img1;
+        }
+        .img2{
+            background-image: url(https://c4.wallpaperflare.com/wallpaper/291/819/697/illustration-city-anime-painting-wallpaper-thumb.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            grid-area: img2;
+            transform: translate(-110px, -330px) rotate(45deg);
+            width: 300px;
+            height: 600px;
+        }
+         .img5{
+            background-image: url(https://c4.wallpaperflare.com/wallpaper/531/951/621/digital-digital-art-artwork-illustration-minimalism-hd-wallpaper-thumb.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            grid-area: img5;
+            transform: translate(-650px,310px) rotate(45deg);
+        }
+        .img4{
+            background-image: url(https://c4.wallpaperflare.com/wallpaper/214/442/543/digital-art-son-goku-dragon-ball-dragon-ball-z-island-hd-wallpaper-thumb.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            grid-area: img4;
+            transform: translate(40px,68px) rotate(45deg);
+        }
+        .img3{
+            background-image: url(https://c4.wallpaperflare.com/wallpaper/892/692/922/howl-s-moving-castle-studio-ghibli-fantasy-art-clouds-daylight-hd-wallpaper-thumb.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            grid-area: img3;
+            transform: translate(580px,-500px) rotate(-45deg);
+        }  
+    </style>
+</head>
+<body>
+    <div class="container1">
+        <div class="img1" ></div>
+        <div class="img2"></div>
+        <div class="img3"></div>
+        <div class="img4"></div>
+        <div class="img5"></div>
+    </div>
+</body>
+</html>
