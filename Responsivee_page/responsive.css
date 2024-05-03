@@ -1,0 +1,76 @@
+.container{
+    display: block;
+    width: 100%;
+}
+.header{
+    height: 20vh;
+    width: 100%;
+    background-color: aqua;
+    font-size: xx-large;
+    text-align: center;
+}
+.main{
+    display: flex;
+    height: auto;
+}
+.beside1{
+    display: block;
+    width: 25%;
+}
+.beside1 div{
+    height: 4vh;
+    width: 80%;
+    margin: 15px;
+    top:5vh;
+    position: relative;
+    left: 2vw;
+    margin: 15px;
+    background-color: aqua;
+    text-align: center;
+}
+.main1{
+    width: 45%;
+    height: 40vh;
+    margin: 30px;
+}
+.beside2{
+    width: 25%;
+    height: 60vh;
+    background-color: grey;
+    margin: 20px;
+}
+@media only screen and (max-width: 900px) {
+    .main{
+        flex-wrap: wrap;
+    }
+    .beside1{
+        order: 1;
+        flex: 1;
+    } 
+    .main1{
+        order: 2;
+        flex:1;
+    }
+    .beside2{
+        order: 3;
+        flex: 100%;
+        height: 20vh;
+    }
+}
+@media only screen and (max-width: 600px){
+    .main{
+        flex-wrap: wrap;
+    }
+    .beside1{
+        order: 1;
+        flex: 100%;
+    }
+    .main1{
+        order:2;
+        flex: 100%;
+    }
+    .beside2{
+        order: 3;
+        flex: 100%;
+    }
+}
