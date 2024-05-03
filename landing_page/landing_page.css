@@ -1,0 +1,101 @@
+.header{
+    display: flex;
+    height:50px;
+    width: 100%;
+    margin-top: 50px;
+    
+}
+img{
+    height: 50px;
+    width: 80px;
+    padding-top: 10px;
+}
+body{
+    background-color: black;
+    color: white;
+    background-image: url(/img/strange_things.jpg);
+    background-repeat: no-repeat;
+    background-size:auto;
+    background-position: top right;
+}
+
+.container p{
+    padding-top: 8px;
+    margin-right: 10px;
+}
+.container h4{
+    padding-top: 5px;
+}
+.navbar{
+    margin-left:30vh;
+    margin-top: 25px;
+    height: 7vh;
+    border-bottom: 1px solid white;
+    
+}
+a{
+    padding-right: 5vh;
+    padding-left: 5vh;
+    border-bottom: 1px solid white;
+    padding-bottom: 34px;
+    
+}
+a:hover{
+    border-bottom: 3px solid white;
+}
+i{
+    margin-right: 6vh;
+}
+.icon{
+    margin-left: 45vh;
+    display: flex;  
+}
+.container{
+    display: block;
+    margin-left: 3vh;
+    
+}
+pre{
+    font-weight: bold;
+    font-size: large;
+    font-family: sans-serif;
+    font-style:normal;
+}
+.main{
+    margin-top: 13vh;
+    margin-left: 2vh;
+}
+.main h1{
+    font-size: 60px;
+}
+.descr{
+    font-size: medium;
+    color:  rgba(238, 231, 231, 0.411);
+}
+button{
+    height: 35px;
+    width: 120px;
+    margin-right: 10px;
+}
+.popular{
+    display: flex;
+    overflow-x:hidden;
+    width: 800px;
+    scrollbar-gutter: stable both-edges;
+}
+.popular img{
+    height: 20vh;
+    width: 15vh;
+    margin-left: 20px;
+}
+.popular p{
+    display: block;
+    text-align: center;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.popular img:hover{
+    border: 1px solid red;
+    box-shadow: 0 0 5px red,0 0 15px red;
+}    
