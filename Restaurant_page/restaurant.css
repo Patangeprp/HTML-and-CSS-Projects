@@ -1,0 +1,149 @@
+body{
+    background-image: url(/img/restobg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+}
+.header{
+    display: flex;
+    margin-top: 50px;
+    background-color: rgba(22, 20, 20, 0.203);
+    backdrop-filter: blur(5px);
+    position: sticky;
+    top: 0px;
+    width: 70%;
+    border-radius: 10px;
+}
+input{
+    background-color: white;
+}
+a{
+    color: white;
+    font-size: larger;
+    margin-right: 2vw; 
+    text-decoration: none; 
+}
+.navbar{
+    padding-top: 2vh;
+    height: 40px;
+}
+a:hover{
+    border-bottom: 3px solid white;
+    padding-bottom: 2vh;
+    cursor: pointer;
+}
+.container{
+    display: block;
+}
+.main{
+    background-color: white;
+    color: black;
+    width: 100%;
+}
+.menu{
+    display: flex;
+}
+.menu img{
+    height: 35vh;
+    width: 15vw;
+    margin: 10px;
+}
+.menu img:hover{
+    box-shadow: 3px 3px 10px  cyan;
+    opacity: 0.7;
+}
+.menu div{
+    display: block;
+}
+.menu p{
+    text-align: center;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.663);
+    font-size: large;
+    margin-top: 1vh;
+}
+
+.about{
+    height: 80vh;
+    width: 97vw;
+    margin: 5px;
+    background-image: url(./img/about.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+pre{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    margin-left: 15vw;
+}
+.about h1{
+    margin-left: 20vw;
+    padding-top: 20vh;
+}
+.container3{
+    display: flex;
+    height: 60vh;
+    background-image: url(/img/coffee.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.container3 h1 {
+    color: white;
+    margin-left: 55vw;
+    font-family: 'Times New Roman', Times, serif;
+}
+.reviews p{
+    width:20vw
+}
+.reviews {
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 55vw;
+    display: flex;
+}
+.container3{
+    display: block;
+}
+.reviews div{
+    background-color: rgba(104, 88, 88, 0.073);
+    margin-right: 20px;
+    padding-left: 10px;
+    border-radius: 10px;
+}
+.footer h1{
+    text-align: center;
+    
+}
+.contact{
+    display: flex;
+    margin-left: 30px;
+}
+.footer{
+    display: block;
+    background-color: black;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+.footer p{
+    width: 250px;
+    margin-left: 20px;
+}
+.footer i{
+    margin-left: 100px;
+    font-size: xx-large;
+}
+.contact div{
+    margin:40px;
+    background-color:rgba(104, 88, 88, 0.073); 
+    padding-top: 10px;
+    border-radius: 10px;
+}
